@@ -33,10 +33,10 @@ class Search extends Component {
         return (
             <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
               <div className="input-group">
-                <input value={this.state.inputSearch} onChange={this.handleChange} type="text" className="form-control" placeholder="..." />
+                <input id="txtSearch" value={this.state.inputSearch} onChange={this.handleChange} type="text" className="form-control" placeholder="..." />
                 <div className="input-group-btn">
-                  <button onClick={this.handleClick} className="btn btn-success" type="button">Search</button>
-                  <button onClick={this.handleClear} className="btn btn-warning" type="button">Clear</button>
+                  <button id="btnSearch" onClick={this.handleClick} className="btn btn-success" type="button">Search</button>
+                  <button id="btnClear" onClick={this.handleClear} className="btn btn-warning" type="button">Clear</button>
                 </div>
               </div>
             </div>

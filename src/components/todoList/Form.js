@@ -73,7 +73,7 @@ class Form extends Component {
                   <form  onSubmit={this.handleSubmit} className="form-inline">
                     <div className="form-group">
                       {/* <label className="sr-only" htmlFor>label</label> */}
-                      <input name="name" type="text" className="form-control" placeholder="Task name" value={name} onChange={this.handleInputChange} />
+                      <input id="txtTaskName" name="name" type="text" className="form-control" placeholder="Task name" value={name} onChange={this.handleInputChange} />
                     </div>
                     <div className="form-group">
                         <select  placeholder="Task priority" name="level" value={parseInt(level)} id="input" className="form-control" required="required" onChange={this.handleInputChange}>
@@ -87,7 +87,7 @@ class Form extends Component {
                         <option selected={parseInt(displayLevel) === 2 } value={2}>High</option>
                       </select> */}
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button id="btnSubmitTask" type="submit" className="btn btn-primary">Submit</button>
                     <button onClick={this.handleCancel} type="button" className="btn btn-danger">Cancel</button>
                   </form>
                 </div>

@@ -19,7 +19,7 @@ class Control extends Component {
         if (this.props.isShowAddForm) {
             return (<button type="button" className="btn btn-default btn-block" onClick={this.handleToogle}>Cancel</button>);
         }
-        return (<button type="button" className="btn btn-info btn-block" onClick={this.handleToogle}>Add new task</button>);	
+        return (<button id="btnAddNewTask" type="button" className="btn btn-info btn-block" onClick={this.handleToogle}>Add new task</button>);	
     }
 
     render() {

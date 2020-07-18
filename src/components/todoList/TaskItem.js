@@ -14,8 +14,9 @@ class TaskItem extends Component {
 
     render() {
         const { val: { index, name, level, id } } = this.props;
+        const rowId = `tr_${id}`;
         return (
-            <tr>
+            <tr id={rowId}>
                 <th scope="row">{index + 1}</th>    
                 <td>{name}</td>
                 <td>{this.generateLevel(level)}</td>
